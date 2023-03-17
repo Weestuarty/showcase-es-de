@@ -1,0 +1,33 @@
+
+amiga1200: Commodore Amiga 1200
+amiga600: Commodore Amiga 600
+arduboy: Arduboy Miniature Game System
+cavestory: Cave Story (NXEngine)
+
+
+easyrpg: EasyRPG Game Engine
+ME)
+
+lcdgames: LCD Handheld Games
+lutris: Lutris Open Gaming Platform
+
+mame-advmame: AdvanceMAME
+mame-mame4all: MAME4ALL
+
+moonlight: Moonlight Game Streaming
+moto: Thomson MO/TO Series
+
+
+neogeocdjp: SNK Neo Geo CD
+
+quake: Quake
+
+sega32xjp: Sega Super 32X
+
+stratagus: Stratagus Game Engine
+symbian: Symbian
+
+to8: Thomson TO8
+
+wasm4: WASM-4 Fantasy Console
+

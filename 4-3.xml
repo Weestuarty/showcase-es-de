@@ -1,0 +1,41 @@
+<theme>
+
+  <view name="system">
+    <carousel name="game_carousel">
+      <itemRotationOrigin>-5.5 -0.8</itemRotationOrigin>
+    </carousel>
+    <image name="pillar">
+      <pos>0.375 0.26</pos>
+      <size>0.26 0.215</size>
+    </image>
+    <video name="md_video">
+      <pos>0.375 0.26</pos>
+      <maxSize>0.26 0.215</maxSize>
+    </video>
+  </view>
+  <view name="system, gamelist">
+
+  </view>
+
+  <view name="gamelist">
+    <carousel name="game_carousel">
+      <itemRotationOrigin>-5.5 -0.8</itemRotationOrigin>
+    </carousel>
+    <image name="pillar">
+      <pos>0.22 0.28</pos>
+      <size>0.26 0.215</size>
+    </image>
+    <video name="md_video">
+      <pos>0.22 0.28</pos>
+      <maxSize>0.26 0.215</maxSize>
+    </video>
+    <badges name="controller">
+      <pos>0.28 0.57</pos>
+    </badges>
+    <text name="collectionsSystemName">
+      <fontSize>0.03</fontSize>
+    </text>
+  </view>
+
+
+</theme>

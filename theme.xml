@@ -1,0 +1,597 @@
+<theme>
+	<include>./navigationsounds.xml</include>
+	<include>./colors.xml</include>
+
+	<include>./assets/sysdata/_default.xml</include>
+	<include>./assets/sysdata/${system.theme}.xml</include>
+
+	<aspectRatio name="4:3">
+		<include>./4-3.xml</include>
+	</aspectRatio>
+
+	<aspectRatio name="16:10">
+		<include>./16-10.xml</include>
+	</aspectRatio>
+
+	<aspectRatio name="21:9">
+		<include>./21-9.xml</include>
+	</aspectRatio>
+
+	<variables>
+		<mainFont>./assets/fonts/atari.ttf</mainFont>
+	</variables>
+
+	<view name="system, gamelist">
+		<image name="background">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<path>./assets/box.png</path>
+			<color>${backgroundColor}</color>
+			<tile>false</tile>
+			<zIndex>0</zIndex>
+		</image>
+
+
+	</view>
+
+	<view name="system">
+		<carousel name="game_carousel">
+			<pos>0.59 0</pos>
+			<size>.6 1</size>
+			<itemSize>0.2 0.2</itemSize>
+			<itemRotation>5.75</itemRotation>
+			<type>verticalWheel</type>
+			<itemScale>1.</itemScale>
+			<selectedItemMargins>0 0</selectedItemMargins>
+			<staticImage>./assets/silver/${system.theme}.png</staticImage>
+			<itemRotationOrigin>-5.5 -1.5</itemRotationOrigin>
+			<systemNameSuffix>false</systemNameSuffix>
+			<itemHorizontalAlignment>center</itemHorizontalAlignment>
+			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+			<color>00000000</color>
+			<textBackgroundColor>00000000</textBackgroundColor>
+			<!-- Placeholder text -->
+			<text>${system.fullName}</text>
+			<textColor>${displayTextColor}</textColor>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+			<letterCase>none</letterCase>
+			<lineSpacing>1</lineSpacing>
+			<zIndex>12</zIndex>
+		</carousel>
+		<helpsystem name="help">
+			<pos>.725 0.61</pos>
+			<origin>1 1</origin>
+			<textColor>${displayTextColor}</textColor>
+			<textColorDimmed>${displayTextColor}</textColorDimmed>
+			<iconColor>${displayTextColor}</iconColor>
+			<iconColorDimmed>${displayTextColor}</iconColorDimmed>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+			<opacity>1</opacity>
+			<letterCase>capitalize</letterCase>
+		</helpsystem>
+		<gameselector name="select">
+			<selection>random</selection>
+			<gameCount>3</gameCount>
+			<allowDuplicates>true</allowDuplicates>
+		</gameselector>
+
+		<text name="gamecount">
+			<pos>0.65 0.2</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.25 0.11</size>
+			<systemdata>gamecountGames</systemdata>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.05</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>${displayTextColor}</color>
+		</text>
+		<text name="gamecount2">
+			<pos>0.65 0.3</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.25 0.11</size>
+			<systemdata>gamecountFavorites</systemdata>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.05</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>${displayTextColor}</color>
+		</text>
+		<image name="tv">
+			<path>./assets/pc.png</path>
+			<pos>0.375 0.3</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.3 0.5</maxSize>
+			<zIndex>20</zIndex>
+		</image>
+
+		<image name="pillar">
+			<pos>0.375 0.245</pos>
+			<size>0.26 0.29</size>
+			<origin>0.5 0.5</origin>
+			<path>./assets/box.png</path>
+			<tile>true</tile>
+			<tileSize>0.5 0.5</tileSize>
+			<color>000000</color>
+			<opacity>1</opacity>
+			<zIndex>1</zIndex>
+		</image>
+
+		<video name="md_video">
+			<pos>0.375 0.245</pos>
+			<maxSize>0.26 0.29</maxSize>
+			<origin>0.5 0.5</origin>
+			<defaultImage>./assets/splash.svg</defaultImage>
+			<interpolation>nearest</interpolation>
+			<pillarboxes>true</pillarboxes>
+			<pillarboxThreshold>0.85 0.90</pillarboxThreshold>
+			<delay>2.7</delay>
+			<scrollFadeIn>true</scrollFadeIn>
+			<zIndex>18</zIndex>
+		</video>
+		<image name="physical">
+			<imageType>physicalmedia</imageType>
+			<pos>0.275 0.53</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.1 0.18</maxSize>
+			<zIndex>22</zIndex>
+		</image>
+		<image name="cover">
+			<imageType>cover</imageType>
+			<pos>0.2 0.53</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.15 0.25</maxSize>
+			<zIndex>21</zIndex>
+		</image>
+		<image name="carouselback">
+			<path>./assets/car.svg</path>
+			<pos>0.5075 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1.05</size>
+			<zIndex>11</zIndex>
+			<color>${carouselColor}</color>
+		</image>
+		<image name="caroutline">
+			<path>./assets/carout.svg</path>
+			<pos>0.495 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1.05</size>
+			<zIndex>11</zIndex>
+			<color>${backgroundColor}</color>
+		</image>
+
+		<image name="systextbox">
+			<pos>0 0.65</pos>
+			<size>1 0.35</size>
+			<origin>0 0</origin>
+			<path>./assets/box.png</path>
+			<color>${descboxColor}</color>
+			<tile>false</tile>
+			<zIndex>9</zIndex>
+		</image>
+
+		<text name="systemDesc">
+			<text>${systemDescription}</text>
+			<metadataElement>true</metadataElement>
+			<container>true</container>
+			<containerStartDelay>1</containerStartDelay>
+			<pos>0.0075 0.655</pos>
+			<origin>0 0</origin>
+			<size>0.655 0.34</size>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.028</fontSize>
+			<lineSpacing>0.95</lineSpacing>
+			<color>${desctextColor}</color>
+			<zIndex>10</zIndex>
+		</text>
+	</view>
+
+	<view name="gamelist">
+		<carousel name="game_carousel">
+			<pos>0.59 0</pos>
+			<size>.6 1</size>
+			<itemSize>0.2 0.2</itemSize>
+			<itemRotation>5.75</itemRotation>
+			<type>verticalWheel</type>
+			<itemScale>1.</itemScale>
+			<selectedItemMargins>0 0</selectedItemMargins>
+			<staticImage>./assets/silver/${system.theme}.png</staticImage>
+			<itemRotationOrigin>-5.5 -1.5</itemRotationOrigin>
+			<systemNameSuffix>false</systemNameSuffix>
+			<itemHorizontalAlignment>center</itemHorizontalAlignment>
+			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+			<color>00000000</color>
+			<textBackgroundColor>00000000</textBackgroundColor>
+			<!-- Placeholder text -->
+			<text>${system.fullName}</text>
+			<textColor>${displayTextColor}</textColor>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+			<letterCase>none</letterCase>
+			<lineSpacing>1</lineSpacing>
+			<zIndex>12</zIndex>
+		</carousel>
+		<helpsystem name="help">
+			<pos>.02 0.985</pos>
+			<origin>0 1</origin>
+			<textColor>${desctextColor}</textColor>
+			<textColorDimmed>${desctextColor}</textColorDimmed>
+			<iconColor>${desctextColor}</iconColor>
+			<iconColorDimmed>${desctextColor}</iconColorDimmed>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+			<opacity>1</opacity>
+			<letterCase>capitalize</letterCase>
+		</helpsystem>
+
+		<image name="carouselback">
+			<path>./assets/car.svg</path>
+			<pos>0.5075 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1.05</size>
+			<zIndex>11</zIndex>
+			<color>${carouselColor}</color>
+		</image>
+		<image name="caroutline">
+			<path>./assets/carout.svg</path>
+			<pos>0.495 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1.05</size>
+			<zIndex>11</zIndex>
+			<color>${backgroundColor}</color>
+		</image>
+
+		<image name="systextbox">
+			<pos>0 0.65</pos>
+			<size>1 0.35</size>
+			<origin>0 0</origin>
+			<path>./assets/box.png</path>
+			<color>${descboxColor}</color>
+			<tile>false</tile>
+			<zIndex>9</zIndex>
+		</image>
+
+		<image name="meta">
+			<pos>0.4 0.3</pos>
+			<size>0.3 0.45</size>
+			<origin>0 0.5</origin>
+			<path>./assets/box.png</path>
+			<color>${descboxColor}</color>
+			<tile>false</tile>
+			<zIndex>6</zIndex>
+		</image>
+		<image name="meta2">
+			<pos>0.4 0.3</pos>
+			<size>0.3 0.455</size>
+			<origin>0 0.5</origin>
+			<path>./assets/outline.svg</path>
+			<color>${backgroundColor}</color>
+			<tile>false</tile>
+			<zIndex>6</zIndex>
+		</image>
+
+
+		<text name="player1">
+			<metadata>players</metadata>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.035</fontSize>
+			<color>${desctextColor}</color>
+			<horizontalAlignment>center</horizontalAlignment>
+			<pos>0.41 0.25</pos>
+			<size>0.28 0.1</size>
+		</text>
+		<text name="player2">
+			<text>Number of players:</text>
+			<metadataElement>true</metadataElement>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.035</fontSize>
+			<color>${desctextColor}</color>
+			<horizontalAlignment>center</horizontalAlignment>
+			<pos>0.41 0.21</pos>
+			<size>0.28 0.1</size>
+		</text>
+		<datetime name="release1">
+			<metadata>releasedate</metadata>
+			<fontPath>${mainFont}</fontPath>
+			<format>%Y</format>
+			<fontSize>0.035</fontSize>
+			<color>${desctextColor}</color>
+			<horizontalAlignment>center</horizontalAlignment>
+			<pos>0.41 0.34</pos>
+			<size>0.28 0.1</size>
+		</datetime>
+		<text name="release2">
+			<text>Released:</text>
+			<metadataElement>true</metadataElement>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.035</fontSize>
+			<color>${desctextColor}</color>
+			<horizontalAlignment>center</horizontalAlignment>
+			<pos>0.41 0.3</pos>
+			<size>0.28 0.1</size>
+		</text>
+		<text name="description1">
+			<size>0.655 0.3</size>
+			<metadata>description</metadata>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1</lineSpacing>
+			<color>${desctextColor}</color>
+			<pos>0.0075 0.67</pos>
+			<origin>0 0</origin>
+		</text>
+		<text name="name">
+			<size>0.28 0.1</size>
+			<origin>0 0</origin>
+			<metadata>name</metadata>
+			<systemNameSuffix>false</systemNameSuffix>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.04</fontSize>
+			<horizontalAlignment>center</horizontalAlignment>
+			<lineSpacing>0.95</lineSpacing>
+			<color>${desctextColor}</color>
+			<pos>0.41 0.09</pos>
+		</text>
+		<text name="collectionsSystemName">
+			<pos>0.55 0.0001</pos>
+			<size>0.3 0.08</size>
+			<origin>0.5 0</origin>
+			<systemNameSuffix>true</systemNameSuffix>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.035</fontSize>
+			<horizontalAlignment>center</horizontalAlignment>
+			<color>${displayTextColor}</color>
+			<zIndex>50</zIndex>
+		</text>
+
+		<image name="tv">
+			<path>./assets/pc.png</path>
+			<pos>0.22 0.32</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.3 0.5</maxSize>
+			<zIndex>20</zIndex>
+		</image>
+		<image name="pillar">
+			<pos>0.22 0.265</pos>
+			<size>0.26 0.29</size>
+			<origin>0.5 0.5</origin>
+			<path>./assets/box.png</path>
+			<tile>true</tile>
+			<tileSize>0.5 0.5</tileSize>
+			<color>000000</color>
+			<opacity>1</opacity>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="logo">
+			<pos>0.22 0.01</pos>
+			<maxSize>0.3 0.08</maxSize>
+			<origin>0.5 0</origin>
+			<path>./assets/logo/${system.theme}.svg</path>
+			<opacity>1</opacity>
+			<zIndex>17</zIndex>
+		</image>
+
+		<image name="physical">
+			<imageType>physicalmedia</imageType>
+			<pos>0.15 0.6</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.1 0.18</maxSize>
+			<zIndex>22</zIndex>
+		</image>
+		<image name="cover">
+			<imageType>cover</imageType>
+			<pos>0.025 0.6</pos>
+			<origin>0 1</origin>
+			<maxSize>0.15 0.25</maxSize>
+			<zIndex>21</zIndex>
+		</image>
+
+		<badges name="controller">
+			<pos>0.3 0.57</pos>
+			<origin>0 1</origin>
+			<size>0.14 .2</size>
+			<direction>row</direction>
+			<lines>1</lines>
+			<itemsPerLine>1</itemsPerLine>
+			<horizontalAlignment>left</horizontalAlignment>
+			<slots>controller</slots>
+			<controllerPos>0.5 0.5</controllerPos>
+			<controllerSize>1.5</controllerSize>
+			<badgeIconColor>${desctextColor}</badgeIconColor>
+			<customBadgeIcon badge="controller">./assets/badges/control.png</customBadgeIcon>
+		</badges>
+
+		<badges name="all">
+			<pos>0.41 0.42</pos>
+			<origin>0 0</origin>
+			<size>0.28 .075</size>
+			<direction>row</direction>
+			<lines>1</lines>
+			<itemsPerLine>5</itemsPerLine>
+			<horizontalAlignment>center</horizontalAlignment>
+			<slots>completed, favorite, altemulator, kidgame,broken</slots>
+			<controllerPos>0.51 0.415</controllerPos>
+			<controllerSize>0.85</controllerSize>
+			<folderLinkSize>0.85 0.9</folderLinkSize>
+			<folderLinkPos>0.47 0.48</folderLinkPos>
+			<folderLinkIconColor>${desctextColor}</folderLinkIconColor>
+			<customFolderLinkIcon>./assets/badges/link.png</customFolderLinkIcon>
+			<badgeIconColor>${badgeColor}</badgeIconColor>
+			<customBadgeIcon badge="folder">./assets/badges/folder.png</customBadgeIcon>
+			<customBadgeIcon badge="broken">./assets/badges/broken.png</customBadgeIcon>
+			<customBadgeIcon badge="kidgame">./assets/badges/kid.png</customBadgeIcon>
+			<customBadgeIcon badge="collection">./assets/badges/collect.png</customBadgeIcon>
+			<customBadgeIcon badge="altemulator">./assets/badges/alt.png</customBadgeIcon>
+			<customBadgeIcon badge="favorite">./assets/badges/fave.png</customBadgeIcon>
+			<customBadgeIcon badge="completed">./assets/badges/complete.png</customBadgeIcon>
+			<customBadgeIcon badge="controller">./assets/badges/control.png</customBadgeIcon>
+		</badges>
+
+		<rating name="rating">
+			<pos>0.495 0.19</pos>
+			<size>0.08 0.04</size>
+			<interpolation>nearest</interpolation>
+			<color>${desctextColor}</color>
+			<filledPath>./assets/rating_filled.svg</filledPath>
+			<unfilledPath>./assets/rating_empty.svg</unfilledPath>
+		</rating>
+		<video name="md_video">
+			<pos>0.22 0.265</pos>
+			<maxSize>0.26 0.29</maxSize>
+			<origin>0.5 0.5</origin>
+			<imageType>titlescreen, screenshot</imageType>
+			<defaultImage>./assets/splash.svg</defaultImage>
+			<interpolation>nearest</interpolation>
+			<pillarboxes>true</pillarboxes>
+			<pillarboxThreshold>0.85 0.90</pillarboxThreshold>
+			<delay>2.7</delay>
+			<scrollFadeIn>true</scrollFadeIn>
+			<zIndex>18</zIndex>
+		</video>
+	</view>
+	<variant name="sysbands">
+		<view name="system, gamelist">
+			<image name="sysband4">
+				<path>./assets/carout.svg</path>
+				<pos>0.49 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>9</zIndex>
+				<color>${systemColorPalette4}</color>
+			</image>
+			<image name="sysband3">
+				<path>./assets/carout.svg</path>
+				<pos>0.4825 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>8</zIndex>
+				<color>${systemColorPalette3}</color>
+			</image>
+			<image name="sysband2">
+				<path>./assets/carout.svg</path>
+				<pos>0.475 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>7</zIndex>
+				<color>${systemColorPalette2}</color>
+			</image>
+			<image name="sysband1">
+				<path>./assets/carout.svg</path>
+				<pos>0.4675 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>6</zIndex>
+				<color>${systemColorPalette1}</color>
+			</image>
+			<image name="systextboxborder4">
+				<pos>0 0.645</pos>
+				<size>1 0.01</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette4}</color>
+				<tile>false</tile>
+				<zIndex>9</zIndex>
+			</image>
+			<image name="systextboxborder3">
+				<pos>0 0.635</pos>
+				<size>1 0.01</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette3}</color>
+				<tile>false</tile>
+				<zIndex>8</zIndex>
+			</image>
+			<image name="systextboxborder2">
+				<pos>0 0.625</pos>
+				<size>1 0.01</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette2}</color>
+				<tile>false</tile>
+				<zIndex>7</zIndex>
+			</image>
+			<image name="systextboxborder1">
+				<pos>0 0.615</pos>
+				<size>1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette1}</color>
+				<tile>false</tile>
+				<zIndex>6</zIndex>
+			</image>
+		</view>
+	</variant>
+	<variant name="plainbands">
+		<view name="system, gamelist">
+			<image name="sysband4">
+				<path>./assets/carout.svg</path>
+				<pos>0.49 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>9</zIndex>
+				<color>${descboxColor}</color>
+			</image>
+			<image name="sysband3">
+				<path>./assets/carout.svg</path>
+				<pos>0.4825 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>8</zIndex>
+				<color>${carouselColor}</color>
+			</image>
+			<image name="sysband2">
+				<path>./assets/carout.svg</path>
+				<pos>0.475 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>7</zIndex>
+				<color>${descboxColor}</color>
+			</image>
+			<image name="sysband1">
+				<path>./assets/carout.svg</path>
+				<pos>0.4675 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<size>1 1.05</size>
+				<zIndex>6</zIndex>
+				<color>${backgroundColor}</color>
+			</image>
+			<image name="systextboxborder4">
+				<pos>0 0.645</pos>
+				<size>1 0.01</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${backgroundColor}</color>
+				<tile>false</tile>
+				<zIndex>9</zIndex>
+			</image>
+			<image name="systextboxborder3">
+				<pos>0 0.635</pos>
+				<size>1 0.01</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${descboxColor}</color>
+				<tile>false</tile>
+				<zIndex>8</zIndex>
+			</image>
+			<image name="systextboxborder2">
+				<pos>0 0.625</pos>
+				<size>1 0.01</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${carouselColor}</color>
+				<tile>false</tile>
+				<zIndex>7</zIndex>
+			</image>
+			<image name="systextboxborder1">
+				<pos>0 0.615</pos>
+				<size>1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${descboxColor}</color>
+				<tile>false</tile>
+				<zIndex>6</zIndex>
+			</image>
+		</view>
+	</variant>
+</theme>

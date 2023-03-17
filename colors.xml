@@ -1,0 +1,69 @@
+<theme>
+    <colorScheme name="mono">
+        <variables>
+            <colorSchemeName>mono</colorSchemeName>
+            <backgroundColor>afafaf</backgroundColor>
+            <carouselColor>404040</carouselColor>
+            <descboxColor>000000</descboxColor>
+            <desctextColor>afafaf</desctextColor>
+            <displayTextColor>000000</displayTextColor>
+            <badgeColor>afafaf</badgeColor>
+        </variables>
+    </colorScheme>
+    <colorScheme name="red">
+        <variables>
+            <colorSchemeName>red</colorSchemeName>
+            <backgroundColor>d9c3c6</backgroundColor>
+            <carouselColor>800808</carouselColor>
+            <descboxColor>420c09</descboxColor>
+            <desctextColor>e3242B</desctextColor>
+            <displayTextColor>60100B</displayTextColor>
+            <badgeColor>e3242B</badgeColor>
+        </variables>
+    </colorScheme>
+    <colorScheme name="blue">
+        <variables>
+            <colorSchemeName>blue</colorSchemeName>
+            <backgroundColor>8096a5</backgroundColor>
+            <carouselColor>02055A</carouselColor>
+            <descboxColor>000137</descboxColor>
+            <desctextColor>b0dbf1</desctextColor>
+            <displayTextColor>02055a</displayTextColor>
+            <badgeColor>b0dbf1</badgeColor>
+        </variables>
+    </colorScheme>
+    <colorScheme name="olive">
+        <variables>
+            <colorSchemeName>olive</colorSchemeName>
+            <backgroundColor>aab597</backgroundColor>
+            <carouselColor>2b3618</carouselColor>
+            <descboxColor>667a44</descboxColor>
+            <desctextColor>1a200e</desctextColor>
+            <displayTextColor>556b2f</displayTextColor>
+            <badgeColor>aab597</badgeColor>
+        </variables>
+    </colorScheme>
+    <colorScheme name="yellow">
+        <variables>
+            <colorSchemeName>yellow</colorSchemeName>
+            <backgroundColor>fef6b9</backgroundColor>
+            <carouselColor>9b8700</carouselColor>
+            <descboxColor>ffe21e</descboxColor>
+            <desctextColor>282300</desctextColor>
+            <displayTextColor>282300</displayTextColor>
+            <badgeColor>ffe21e</badgeColor>
+        </variables>
+    </colorScheme>
+    <colorScheme name="wsty">
+        <variables>
+            <colorSchemeName>weestuarty</colorSchemeName>
+            <backgroundColor>ffe21e</backgroundColor>
+            <carouselColor>6a5c00</carouselColor>
+            <descboxColor>111111</descboxColor>
+            <desctextColor>ffe21e</desctextColor>
+            <displayTextColor>111111</displayTextColor>
+            <badgeColor>ffe21e</badgeColor>
+        </variables>
+    </colorScheme>
+
+</theme>

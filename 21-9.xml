@@ -1,0 +1,55 @@
+<theme>
+
+  <view name="system">
+    <carousel name="game_carousel">
+      <itemRotationOrigin>-5.5 -2.5</itemRotationOrigin>
+    </carousel>
+    <image name="pillar">
+      <pos>0.375 0.2375</pos>
+      <size>0.24 0.33</size>
+    </image>
+    <video name="md_video">
+      <pos>0.375 0.2375</pos>
+      <maxSize>0.24 0.33</maxSize>
+    </video>
+    <image name="physical">
+      <imageType>physicalmedia</imageType>
+      <pos>0.3 0.53</pos>
+      <origin>0.5 1</origin>
+      <maxSize>0.1 0.18</maxSize>
+      <zIndex>22</zIndex>
+    </image>
+    <image name="cover">
+      <imageType>cover</imageType>
+      <pos>0.25 0.53</pos>
+      <origin>0.5 1</origin>
+      <maxSize>0.15 0.25</maxSize>
+      <zIndex>21</zIndex>
+    </image>
+  </view>
+  <view name="system, gamelist">
+
+  </view>
+
+  <view name="gamelist">
+    <carousel name="game_carousel">
+      <itemRotationOrigin>-5.5 -2.5</itemRotationOrigin>
+    </carousel>
+    <image name="pillar">
+      <pos>0.22 0.2775</pos>
+      <size>0.23 0.34</size>
+    </image>
+    <video name="md_video">
+      <pos>0.22 0.2775</pos>
+      <maxSize>0.23 0.34</maxSize>
+    </video>
+    <image name="tv">
+      <path>./assets/pc.png</path>
+      <pos>0.22 0.34</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.3 0.5</maxSize>
+      <zIndex>20</zIndex>
+    </image>
+  </view>
+
+</theme>
