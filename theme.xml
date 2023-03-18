@@ -216,18 +216,23 @@
 			<lineSpacing>1</lineSpacing>
 			<zIndex>18</zIndex>
 	</carousel>
-		<helpsystem name="help">
-			<pos>.02 0.985</pos>
-			<origin>0 1</origin>
-			<textColor>${desctextColor}</textColor>
-			<textColorDimmed>${desctextColor}</textColorDimmed>
-			<iconColor>${desctextColor}</iconColor>
-			<iconColorDimmed>${desctextColor}</iconColorDimmed>
-			<fontPath>${mainFont}</fontPath>
-			<fontSize>0.02</fontSize>
-			<opacity>1</opacity>
-			<letterCase>capitalize</letterCase>
-		</helpsystem>
+	<helpsystem name="help">
+		<pos>.725 0.61</pos>
+		<origin>1 1</origin>
+		<textColor>${displayTextColor}</textColor>
+		<textColorDimmed>${displayTextColor}</textColorDimmed>
+		<iconColor>${displayTextColor}</iconColor>
+		<iconColorDimmed>${displayTextColor}</iconColorDimmed>
+		<fontPath>${mainFont}</fontPath>
+		<fontSize>0.02</fontSize>
+		<opacity>1</opacity>
+		<letterCase>capitalize</letterCase>
+	</helpsystem>
+	<gameselector name="select">
+		<selection>random</selection>
+		<gameCount>3</gameCount>
+		<allowDuplicates>true</allowDuplicates>
+	</gameselector>
 
 		<image name="carouselback">
 			<path>./assets/car.svg</path>
