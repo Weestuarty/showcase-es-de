@@ -203,7 +203,7 @@
 			<itemRotationOrigin>-5 0</itemRotationOrigin>
 			<itemAxisHorizontal>true</itemAxisHorizontal>
 			<systemNameSuffix>false</systemNameSuffix>
-			<itemHorizontalAlignment>centre</itemHorizontalAlignment>
+			<itemHorizontalAlignment>center</itemHorizontalAlignment>
 			<verticalOffset>-0.275</verticalOffset>
 			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
 			<color>00000000</color>
