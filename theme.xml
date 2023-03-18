@@ -192,18 +192,18 @@
 
 	<view name="gamelist">
 		<carousel name="game_carousel">
-			<pos>0.601 0</pos>
+			<pos>0.602 0</pos>
 			<size>.6 1</size>
 			<itemSize>0.19 0.19</itemSize>
-			<itemRotation>8.85</itemRotation>
+			<itemRotation>7.5</itemRotation>
 			<type>verticalWheel</type>
-			<itemScale>1.</itemScale>
+			<itemScale>1</itemScale>
 			<selectedItemMargins>0 0</selectedItemMargins>
 			<staticImage>./assets/silver/${system.theme}.png</staticImage>
-			<itemRotationOrigin>-4. 0</itemRotationOrigin>
+			<itemRotationOrigin>-5 0</itemRotationOrigin>
 			<itemAxisHorizontal>true</itemAxisHorizontal>
 			<systemNameSuffix>false</systemNameSuffix>
-			<itemHorizontalAlignment>center</itemHorizontalAlignment>
+			<itemHorizontalAlignment>centre</itemHorizontalAlignment>
 			<verticalOffset>-0.275</verticalOffset>
 			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
 			<color>00000000</color>
