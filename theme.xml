@@ -37,17 +37,19 @@
 
 	<view name="system">
 		<carousel name="game_carousel">
-			<pos>0.59 0</pos>
+			<pos>0.601 0</pos>
 			<size>.6 1</size>
-			<itemSize>0.2 0.2</itemSize>
-			<itemRotation>5.75</itemRotation>
+			<itemSize>0.19 0.19</itemSize>
+			<itemRotation>8.85</itemRotation>
 			<type>verticalWheel</type>
 			<itemScale>1.</itemScale>
 			<selectedItemMargins>0 0</selectedItemMargins>
 			<staticImage>./assets/silver/${system.theme}.png</staticImage>
-			<itemRotationOrigin>-5.5 -1.5</itemRotationOrigin>
+			<itemRotationOrigin>-4. 0</itemRotationOrigin>
+			<itemAxisHorizontal>true</itemAxisHorizontal>
 			<systemNameSuffix>false</systemNameSuffix>
 			<itemHorizontalAlignment>center</itemHorizontalAlignment>
+			<verticalOffset>-0.275</verticalOffset>
 			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
 			<color>00000000</color>
 			<textBackgroundColor>00000000</textBackgroundColor>
@@ -55,11 +57,11 @@
 			<text>${system.fullName}</text>
 			<textColor>${displayTextColor}</textColor>
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>0.02</fontSize>
+			<fontSize>0.06</fontSize>
 			<letterCase>none</letterCase>
 			<lineSpacing>1</lineSpacing>
-			<zIndex>12</zIndex>
-		</carousel>
+			<zIndex>18</zIndex>
+	</carousel>
 		<helpsystem name="help">
 			<pos>.725 0.61</pos>
 			<origin>1 1</origin>
@@ -189,17 +191,19 @@
 
 	<view name="gamelist">
 		<carousel name="game_carousel">
-			<pos>0.59 0</pos>
+			<pos>0.601 0</pos>
 			<size>.6 1</size>
-			<itemSize>0.2 0.2</itemSize>
-			<itemRotation>5.75</itemRotation>
+			<itemSize>0.19 0.19</itemSize>
+			<itemRotation>8.85</itemRotation>
 			<type>verticalWheel</type>
 			<itemScale>1.</itemScale>
 			<selectedItemMargins>0 0</selectedItemMargins>
 			<staticImage>./assets/silver/${system.theme}.png</staticImage>
-			<itemRotationOrigin>-5.5 -1.5</itemRotationOrigin>
+			<itemRotationOrigin>-4. 0</itemRotationOrigin>
+			<itemAxisHorizontal>true</itemAxisHorizontal>
 			<systemNameSuffix>false</systemNameSuffix>
 			<itemHorizontalAlignment>center</itemHorizontalAlignment>
+			<verticalOffset>-0.275</verticalOffset>
 			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
 			<color>00000000</color>
 			<textBackgroundColor>00000000</textBackgroundColor>
@@ -207,11 +211,11 @@
 			<text>${system.fullName}</text>
 			<textColor>${displayTextColor}</textColor>
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>0.02</fontSize>
+			<fontSize>0.06</fontSize>
 			<letterCase>none</letterCase>
 			<lineSpacing>1</lineSpacing>
-			<zIndex>12</zIndex>
-		</carousel>
+			<zIndex>18</zIndex>
+	</carousel>
 		<helpsystem name="help">
 			<pos>.02 0.985</pos>
 			<origin>0 1</origin>
@@ -520,6 +524,108 @@
 				<tile>false</tile>
 				<zIndex>6</zIndex>
 			</image>
+		
+			<image name="select1">
+				<pos>0.765 0.215</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette1}</color>
+				<tile>false</tile>
+				<zIndex>16</zIndex>
+			</image>
+			<image name="select2">
+				<pos>0.775 0.205</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette2}</color>
+				<tile>false</tile>
+				<zIndex>15</zIndex>
+			</image>
+			<image name="select2a">
+				<pos>0.775 0.225</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette2}</color>
+				<tile>false</tile>
+				<zIndex>15</zIndex>
+			</image>
+			<image name="select3">
+				<pos>0.785 0.195</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette3}</color>
+				<tile>false</tile>
+				<zIndex>14</zIndex>
+			</image>
+			<image name="select3a">
+				<pos>0.785 0.235</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette3}</color>
+				<tile>false</tile>
+				<zIndex>14</zIndex>
+			</image>
+			<image name="select4">
+				<pos>0.785 0.185</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette4}</color>
+				<tile>false</tile>
+				<zIndex>13</zIndex>
+			</image>
+			<image name="select4a">
+				<pos>0.785 0.245</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${systemColorPalette4}</color>
+				<tile>false</tile>
+				<zIndex>13</zIndex>
+			</image>
+			<image name="select5">
+				<pos>0.795 0.175</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${backgroundColor}</color>
+				<tile>false</tile>
+				<zIndex>12</zIndex>
+			</image>
+			<image name="select5a">
+				<pos>0.795 0.255</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${backgroundColor}</color>
+				<tile>false</tile>
+				<zIndex>12</zIndex>
+			</image>
+			<image name="select6">
+				<pos>0.8 0.175</pos>
+				<size>0.03 0.1</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${carouselColor}00</color>
+				<colorEnd>${carouselColor}</colorEnd>
+				<tile>false</tile>
+				<zIndex>17</zIndex>
+			</image>
+			<image name="select6a">
+				<pos>0.83 0.175</pos>
+				<size>0.2 0.1</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${carouselColor}</color>
+				<colorEnd>${carouselColor}</colorEnd>
+				<tile>false</tile>
+				<zIndex>17</zIndex>
+			</image>
 		</view>
 	</variant>
 	<variant name="plainbands">
@@ -558,7 +664,7 @@
 			</image>
 			<image name="systextboxborder4">
 				<pos>0 0.645</pos>
-				<size>1 0.01</size>
+				<size>1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
 				<color>${backgroundColor}</color>
@@ -567,7 +673,7 @@
 			</image>
 			<image name="systextboxborder3">
 				<pos>0 0.635</pos>
-				<size>1 0.01</size>
+				<size>1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
 				<color>${descboxColor}</color>
@@ -576,7 +682,7 @@
 			</image>
 			<image name="systextboxborder2">
 				<pos>0 0.625</pos>
-				<size>1 0.01</size>
+				<size>1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
 				<color>${carouselColor}</color>
@@ -592,6 +698,90 @@
 				<tile>false</tile>
 				<zIndex>6</zIndex>
 			</image>
+			<image name="select1">
+				<pos>0.775 0.215</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${descboxColor}</color>
+				<tile>false</tile>
+				<zIndex>16</zIndex>
+			</image>
+			<image name="select2">
+				<pos>0.785 0.205</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${carouselColor}</color>
+				<tile>false</tile>
+				<zIndex>15</zIndex>
+			</image>
+			<image name="select2a">
+				<pos>0.785 0.225</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${carouselColor}</color>
+				<tile>false</tile>
+				<zIndex>15</zIndex>
+			</image>
+			<image name="select3">
+				<pos>0.79 0.195</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${descboxColor}</color>
+				<tile>false</tile>
+				<zIndex>14</zIndex>
+			</image>
+			<image name="select3a">
+				<pos>0.79 0.235</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${descboxColor}</color>
+				<tile>false</tile>
+				<zIndex>14</zIndex>
+			</image>
+			<image name="select4">
+				<pos>0.795 0.185</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${backgroundColor}</color>
+				<tile>false</tile>
+				<zIndex>13</zIndex>
+			</image>
+			<image name="select4a">
+				<pos>0.795 0.245</pos>
+				<size>0.1 0.015</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${backgroundColor}</color>
+				<tile>false</tile>
+				<zIndex>13</zIndex>
+			</image>
+			<image name="select6">
+				<pos>0.8 0.175</pos>
+				<size>0.03 0.1</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${carouselColor}00</color>
+				<colorEnd>${carouselColor}</colorEnd>
+				<tile>false</tile>
+				<zIndex>17</zIndex>
+			</image>
+			<image name="select6a">
+				<pos>0.83 0.175</pos>
+				<size>0.2 0.1</size>
+				<origin>0 0</origin>
+				<path>./assets/box.png</path>
+				<color>${carouselColor}</color>
+				<colorEnd>${carouselColor}</colorEnd>
+				<tile>false</tile>
+				<zIndex>17</zIndex>
+			</image>
 		</view>
 	</variant>
+
 </theme>
