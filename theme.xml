@@ -331,6 +331,7 @@
 			<color>${desctextColor}</color>
 			<pos>0.0075 0.67</pos>
 			<origin>0 0</origin>
+			<zIndex>10</zIndex>
 		</text>
 		<text name="name">
 			<size>0.28 0.1</size>
@@ -560,7 +561,7 @@
 				<zIndex>15</zIndex>
 			</image>
 			<image name="select3">
-				<pos>0.785 0.195</pos>
+				<pos>0.7825 0.195</pos>
 				<size>0.1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
@@ -569,7 +570,7 @@
 				<zIndex>14</zIndex>
 			</image>
 			<image name="select3a">
-				<pos>0.785 0.235</pos>
+				<pos>0.7825 0.235</pos>
 				<size>0.1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
@@ -715,7 +716,7 @@
 				<zIndex>16</zIndex>
 			</image>
 			<image name="select2">
-				<pos>0.785 0.205</pos>
+				<pos>0.7825 0.205</pos>
 				<size>0.1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
@@ -724,7 +725,7 @@
 				<zIndex>15</zIndex>
 			</image>
 			<image name="select2a">
-				<pos>0.785 0.225</pos>
+				<pos>0.7825 0.225</pos>
 				<size>0.1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
