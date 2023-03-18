@@ -323,14 +323,14 @@
 			<size>0.28 0.1</size>
 		</text>
 		<text name="description1">
-			<size>0.655 0.3</size>
 			<metadata>description</metadata>
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.03</fontSize>
 			<lineSpacing>1</lineSpacing>
 			<color>${desctextColor}</color>
-			<pos>0.0075 0.67</pos>
+			<pos>0.0075 0.655</pos>
 			<origin>0 0</origin>
+			<size>0.655 0.31</size>
 			<zIndex>10</zIndex>
 		</text>
 		<text name="name">
