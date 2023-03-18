@@ -671,7 +671,7 @@
 			</image>
 			<image name="systextboxborder4">
 				<pos>0 0.645</pos>
-				<size>1 0.015</size>
+				<size>1 0.01</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
 				<color>${backgroundColor}</color>
