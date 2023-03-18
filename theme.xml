@@ -55,7 +55,7 @@
 			<textBackgroundColor>00000000</textBackgroundColor>
 			<!-- Placeholder text -->
 			<text>${system.fullName}</text>
-			<textColor>${displayTextColor}</textColor>
+			<textColor>${desctextColor}</textColor>
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.06</fontSize>
 			<letterCase>none</letterCase>
@@ -63,12 +63,12 @@
 			<zIndex>18</zIndex>
 	</carousel>
 		<helpsystem name="help">
-			<pos>.725 0.61</pos>
+			<pos>.61 0.99</pos>
 			<origin>1 1</origin>
-			<textColor>${displayTextColor}</textColor>
-			<textColorDimmed>${displayTextColor}</textColorDimmed>
-			<iconColor>${displayTextColor}</iconColor>
-			<iconColorDimmed>${displayTextColor}</iconColorDimmed>
+			<textColor>${desctextColor}</textColor>
+			<textColorDimmed>${desctextColor}</textColorDimmed>
+			<iconColor>${desctextColor}</iconColor>
+			<iconColorDimmed>${desctextColor}</iconColorDimmed>
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.02</fontSize>
 			<opacity>1</opacity>
@@ -176,14 +176,15 @@
 		<text name="systemDesc">
 			<text>${systemDescription}</text>
 			<metadataElement>true</metadataElement>
+			<verticalAlignment>top</verticalAlignment>
 			<container>true</container>
 			<containerStartDelay>1</containerStartDelay>
 			<pos>0.0075 0.655</pos>
 			<origin>0 0</origin>
-			<size>0.655 0.34</size>
+			<size>0.655 0.31</size>
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.028</fontSize>
-			<lineSpacing>0.95</lineSpacing>
+			<lineSpacing>0.9</lineSpacing>
 			<color>${desctextColor}</color>
 			<zIndex>10</zIndex>
 		</text>
@@ -207,9 +208,10 @@
 			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
 			<color>00000000</color>
 			<textBackgroundColor>00000000</textBackgroundColor>
+			<fastScrolling>true</fastScrolling>
 			<!-- Placeholder text -->
 			<text>${system.fullName}</text>
-			<textColor>${displayTextColor}</textColor>
+			<textColor>${desctextColor}</textColor>
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.06</fontSize>
 			<letterCase>none</letterCase>
@@ -217,12 +219,12 @@
 			<zIndex>18</zIndex>
 	</carousel>
 	<helpsystem name="help">
-		<pos>.725 0.61</pos>
+		<pos>.61 0.99</pos>
 		<origin>1 1</origin>
-		<textColor>${displayTextColor}</textColor>
-		<textColorDimmed>${displayTextColor}</textColorDimmed>
-		<iconColor>${displayTextColor}</iconColor>
-		<iconColorDimmed>${displayTextColor}</iconColorDimmed>
+		<textColor>${desctextColor}</textColor>
+		<textColorDimmed>${desctextColor}</textColorDimmed>
+		<iconColor>${desctextColor}</iconColor>
+		<iconColorDimmed>${desctextColor}</iconColorDimmed>
 		<fontPath>${mainFont}</fontPath>
 		<fontSize>0.02</fontSize>
 		<opacity>1</opacity>
@@ -495,7 +497,7 @@
 			</image>
 			<image name="systextboxborder4">
 				<pos>0 0.645</pos>
-				<size>1 0.01</size>
+				<size>1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
 				<color>${systemColorPalette4}</color>
@@ -504,7 +506,7 @@
 			</image>
 			<image name="systextboxborder3">
 				<pos>0 0.635</pos>
-				<size>1 0.01</size>
+				<size>1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
 				<color>${systemColorPalette3}</color>
@@ -513,7 +515,7 @@
 			</image>
 			<image name="systextboxborder2">
 				<pos>0 0.625</pos>
-				<size>1 0.01</size>
+				<size>1 0.015</size>
 				<origin>0 0</origin>
 				<path>./assets/box.png</path>
 				<color>${systemColorPalette2}</color>
