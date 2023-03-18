@@ -179,7 +179,7 @@
 			<verticalAlignment>top</verticalAlignment>
 			<container>true</container>
 			<containerStartDelay>1</containerStartDelay>
-			<pos>0.0075 0.655</pos>
+			<pos>0.0075 0.6575</pos>
 			<origin>0 0</origin>
 			<size>0.655 0.31</size>
 			<fontPath>${mainFont}</fontPath>
@@ -325,10 +325,10 @@
 		<text name="description1">
 			<metadata>description</metadata>
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>0.03</fontSize>
-			<lineSpacing>1</lineSpacing>
+			<fontSize>0.028</fontSize>
+			<lineSpacing>0.9</lineSpacing>
 			<color>${desctextColor}</color>
-			<pos>0.0075 0.655</pos>
+			<pos>0.0075 0.6575</pos>
 			<origin>0 0</origin>
 			<size>0.655 0.31</size>
 			<zIndex>10</zIndex>
