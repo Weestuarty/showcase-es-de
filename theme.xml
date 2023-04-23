@@ -65,9 +65,9 @@
 		<helpsystem name="help">
 			<pos>.61 0.99</pos>
 			<origin>1 1</origin>
-			<posDimmed>0.5 0.85</posDimmed>
+			<posDimmed>0.5 0.95</posDimmed>
 			<originDimmed>0.5 0.5</originDimmed>
-			<fontSizeDimmed>0.025</fontSizeDimmed>
+			<fontSizeDimmed>0.035</fontSizeDimmed>
 			<textColor>${desctextColor}</textColor>
 			<textColorDimmed>${desctextColor}</textColorDimmed>
 			<iconColor>${desctextColor}</iconColor>
