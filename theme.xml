@@ -2,8 +2,10 @@
 	<include>./navigationsounds.xml</include>
 	<include>./colors.xml</include>
 
-	<include>./assets/sysdata/_default.xml</include>
-	<include>./assets/sysdata/${system.theme}.xml</include>
+	<include>./system/metadata/_default.xml</include>
+    <include>./system/custom/metadata/_default.xml</include>
+    <include>./system/custom/metadata/${system.theme}.xml</include>
+    <include>./system/metadata/${system.theme}.xml</include>
 
 	<aspectRatio name="4:3">
 		<include>./4-3.xml</include>
@@ -382,7 +384,8 @@
 			<pos>0.22 0.01</pos>
 			<maxSize>0.3 0.08</maxSize>
 			<origin>0.5 0</origin>
-			<path>./assets/logo/${system.theme}.svg</path>
+			<path>./system/logos/system-logo-color/${system.theme}.svg</path>
+			<default>./system/custom/logocolor/${system.theme}.svg</default>
 			<opacity>1</opacity>
 			<zIndex>17</zIndex>
 		</image>
