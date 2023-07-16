@@ -428,7 +428,7 @@
 			<lines>1</lines>
 			<itemsPerLine>6</itemsPerLine>
 			<horizontalAlignment>center</horizontalAlignment>
-			<slots>completed, favorite, altemulator, kidgame,broken,folder</slots>
+			<slots>completed, favorite, altemulator, kidgame,broken,manual</slots>
 			<controllerPos>0.51 0.415</controllerPos>
 			<controllerSize>0.85</controllerSize>
 			<folderLinkSize>0.85 0.9</folderLinkSize>
@@ -436,7 +436,7 @@
 			<folderLinkIconColor>${desctextColor}</folderLinkIconColor>
 			<customFolderLinkIcon>./assets/badges/link.png</customFolderLinkIcon>
 			<badgeIconColor>${badgeColor}</badgeIconColor>
-			<customBadgeIcon badge="folder">./assets/badges/folder.png</customBadgeIcon>
+			<customBadgeIcon badge="manual">./assets/badges/manual.png</customBadgeIcon>
 			<customBadgeIcon badge="broken">./assets/badges/broken.png</customBadgeIcon>
 			<customBadgeIcon badge="kidgame">./assets/badges/kid.png</customBadgeIcon>
 			<customBadgeIcon badge="collection">./assets/badges/collect.png</customBadgeIcon>
