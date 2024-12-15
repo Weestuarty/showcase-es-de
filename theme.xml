@@ -1,7 +1,7 @@
 <theme>
 	<include>./navigationsounds.xml</include>
 	<include>./colors.xml</include>
-
+	<include>./languages.xml</include>
 	<include>./system/metadata/_default.xml</include>
     <include>./system/custom/metadata/_default.xml</include>
     <include>./system/custom/metadata/${system.theme}.xml</include>
@@ -22,6 +22,24 @@
 	<variables>
 		<mainFont>./assets/fonts/atari.ttf</mainFont>
 	</variables>
+
+	<fontSize name="medium">
+		<variables>
+			<descSize>0.035</descSize>
+		</variables>
+	</fontSize>
+
+	<fontSize name="large">
+		<variables>
+			<descSize>0.045</descSize>
+		</variables>
+	</fontSize>
+
+	<fontSize name="x-large">
+		<variables>
+			<descSize>0.055</descSize>
+		</variables>
+	</fontSize>
 
 	<view name="system, gamelist">
 		<image name="background">
@@ -179,7 +197,10 @@
 		</image>
 
 		<text name="systemDesc">
-			<text>${systemDescription}</text>
+			<text>
+				
+				${systemDescription}
+			</text>
 			<metadataElement>true</metadataElement>
 			<verticalAlignment>top</verticalAlignment>
 			<container>true</container>
@@ -188,7 +209,7 @@
 			<origin>0 0</origin>
 			<size>0.655 0.31</size>
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>0.028</fontSize>
+			<fontSize>${descSize}</fontSize>
 			<lineSpacing>0.9</lineSpacing>
 			<color>${desctextColor}</color>
 			<zIndex>10</zIndex>
@@ -298,7 +319,7 @@
 			<size>0.28 0.1</size>
 		</text>
 		<text name="player2">
-			<text>Number of players:</text>
+			<text>${langLabelPlayers}:</text>
 			<metadataElement>true</metadataElement>
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.035</fontSize>
@@ -318,7 +339,7 @@
 			<size>0.28 0.1</size>
 		</datetime>
 		<text name="release2">
-			<text>Released:</text>
+			<text>${langLabelReleasedate}:</text>
 			<metadataElement>true</metadataElement>
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.035</fontSize>
@@ -330,7 +351,7 @@
 		<text name="description1">
 			<metadata>description</metadata>
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>0.028</fontSize>
+			<fontSize>${descSize}</fontSize>
 			<lineSpacing>0.9</lineSpacing>
 			<color>${desctextColor}</color>
 			<pos>0.0075 0.6575</pos>
